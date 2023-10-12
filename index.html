@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome 
+    -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="weather-app">
+        <div class="container">
+            <div class="container_1">
+                <h3 class="brand">The Weather</h3>
+            </div>
+            
+            <div class="container_2">
+                <div class="container_2_1">
+                    
+                    <h1 class="temp">
+                        16&#176;
+                    </h1>
+                    <div class="city-time">
+                        <h1 class="name">London</h1>
+                        <small>
+                            <span class="time">06:09</span>
+                            <span class="date">
+                                Monday Sep 19
+                            </span>
+                        </small>
+                    </div>        
+                </div>
+                <div class="weather">
+                    <img class="icon" src="./icons/day/113.png" alt="Sun Icon" height="50" width="50">
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="panel">
+        <form action="" id="locationInput">
+            <input type="text" class="search" placeholder="Search Location..."/>
+            <button class="submit" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <ul class="cities">
+            <li class="city">New York</li>
+            <li class="city">California</li>
+            <li class="city">Paris</li>
+            <li class="city">Tokyo</li>
+        </ul>
+        <ul>
+            <h4>Weather Details</h4>
+            <li><span class="cloud">Cloud</span><span class="cloud_">89%</span></li>
+            <li><span class="humidity">Humidity</span><span class="humidity_">64%</span></li>
+            <li><span class="wind">wind</span><span class="wind_">8km/h</span></li>
+        </ul>
+    </div>
+        <script src="main.js"></script>
+</body>
+</html>

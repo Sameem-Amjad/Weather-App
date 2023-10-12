@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-image: url("./images/day/bg_cloudy.webp") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    height: 100vh;
+
+}
+.weather-app{
+    flex: 8;
+}
+
+.container{
+    height: 600px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.brand{
+    margin: 40px 0px 0px 60px;
+    font-size: 2em;
+}
+.container_2,.container_2_1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.temp{
+    font-size: 9em;
+    margin: 0px 0px 0px 60px;
+}
+.city-time{
+    margin: 0px 0px 0px 30px;
+    font-size: 1.5em;
+}
+.weather{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    flex-basis: min-content;
+    margin: 15px 0px 0px 30px;
+}
+.condition{
+    font-size: 1.3em;
+    margin: 20px 0px 0px 4px;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    backdrop-filter: blur(8px);
+    flex-wrap: wrap;
+    align-content: flex-end;
+    
+}
+.panel form{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.search{
+    padding: 30px 0px 0px 0px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 80%;
+    backdrop-filter: blur(1px);
+    
+}
+.search::placeholder{
+    
+    color: white;
+    font-size: 16px;
+}
+.search:focus{
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    font-size: 18px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.submit{
+    padding: 20px;
+    background-color: #fa6d1b;
+    border: none;
+    outline: none;
+    position: absolute ;
+    top: 0;
+    right: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.submit i{
+    font-size: 26px;
+ color: white;
+}
+.submit:hover{
+    background-color: transparent;  
+}
+.submit i:hover{
+    color: #fa6d1b;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    margin-top: 30px;
+    width: 80%;
+
+}
+.cities{
+    border-bottom: 3px solid white;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    flex: 1;
+    list-style: none;
+}
+.city{
+    cursor: pointer;
+}
+.city:hover{
+    font-weight: bolder;
+    text-decoration:underline;
+}
+h4{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.cloud,.wind,.humidity{
+    flex: 5;
+    font-size: 15px;
+}
+@media screen and (max-width:800px) {
+    body{
+        flex-direction: column;
+        height: 100vh;
+
+    }
+    .weather-app{
+        flex: 3;
+    }
+    .container{
+        height: 40vh;
+    }
+    .panel{
+        height: 60vh;
+    }
+    .panel form{
+        justify-content: center;
+    }
+    .submit{
+        position: relative;
+        padding: 12px;
+    }
+
+}
+@media screen and (max-width:500px) {
+    
+    .container_2{
+        flex-direction: row;
+    }
+    .container_2_1{
+        flex: 2;
+        flex-direction: row;
+    }
+    .container_2_1 h1{
+        margin: 0px 0px 0px 20px;
+        font-size: 80px;
+    }
+    .city-time{
+        margin: 0px 0px 0px 20px;
+        
+    }
+    .city-time h1{
+        font-size: 40px;
+    }
+    .city-time span{
+        margin: 0px 0px 0px 25px;
+    }
+    .panel form{
+         flex: 2;
+         justify-content: center;
+    }
+    .search{
+        width: 70%;
+    }
+    .submit{
+       position:relative;
+        padding: 14px;
+    }
+}
+@media screen and (max-width:340px) {
+    .container_2_1{
+        flex: 8;
+    }
+    .weather{
+        flex: 2;
+        margin-left: 2px;
+    }
+    .container_2_1 h1{
+        font-size: 70px;
+    }
+    .container_2_1 h1{
+        font-size: 40px;
+    }
+    .city-time{
+        margin: 0;
+    }
+}
